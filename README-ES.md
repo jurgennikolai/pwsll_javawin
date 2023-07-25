@@ -29,7 +29,7 @@ Eso sería todo.
 
 ### Ejecución
 
-* **En cmd: **
+* **En cmd:**
  `$ powershell -File <path file>.ps1 `
 *Ejemplo:*
  `$ powershell -File D:\directory01\script_auth.ps1`
@@ -37,6 +37,14 @@ Eso sería todo.
 `$ powershell -noexit .\script_auth.ps1`
 *Ejemplo:*
  `$ powershell -noexit .\script_auth.ps1`
+
+Seguidamente te pedirá que ingreses tu usuario y contraseña a nivel de dominio. Una vez finalizado, se generará un reporte en .csv con el nombre de report.csv el cual tendrá las siguientes columnas:
+
+`report.csv`
+
+Hostname | Conn. Port | Conn. Credentials | Msg
+--- | --- | --- | --- 
+... | ... | ... | ...
 
 
 ### Nota

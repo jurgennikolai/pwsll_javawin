@@ -5,8 +5,8 @@ $hostnames = Get-Content  "$pathDirectory\hostnames.txt"
 
 $credential = Get-Credential
 
-#Format CSV: Hostname, Conn. Puerto, Conn. Credenciales, Observacion
-Add-Content -Path $pathReport -Value "Hostname,Conn. Puerto,Conn. Credenciales,Observacion" #Cabecera CSV
+#Format CSV: Hostname,Conn. Port,Conn. Credentials, Msg
+Add-Content -Path $pathReport -Value "Hostname,Conn. Port,Conn. Credentials, Msg" #Header CSV
 
 foreach ($hostname in $hostnames)
 {
