@@ -1,11 +1,11 @@
 ## Powershell - AuthWin
 ### Descripción
 
-El script permite automatizar la validación de credenciales en servidores a nivel de dominio. Así mismo, permite identificar los siguientes estados: Comunicación por el puerto 3389 (RDP), DMZ y acceso al servidor.
+El script permite obtener la versión del Java. Así mismo, en el reporte que brinda se muestran los siguientes estados: No tiene comunicación con el servidor, No tiene instalado el Java y Versión del Java. Además, el script tendrá como entrada los hostnames o ip's de los servidores a los cuales se realizará la consulta, para esto será necesario usar su usuario administrador a nivel de dominio. 
 
 ### Preparación
 
-1. El archivo **hostnames.txt** debe contener las ip´s o hostname´s de los servidores con los cuales validaremos las credenciales, como la siguiente manera: 
+1. El archivo **hostnames.txt** debe contener las ip´s o hostname´s de los servidores con los cuales se ingresará las credenciales, como la siguiente manera: 
 
 `hostnames.txt` 
 
@@ -42,7 +42,7 @@ Seguidamente te pedirá que ingreses tu usuario y contraseña a nivel de dominio
 
 `report.csv`
 
-Hostname | Conn. Port | Conn. Credentials | Msg
+Hostname | Category | Val | Exception
 --- | --- | --- | --- 
 ... | ... | ... | ...
 

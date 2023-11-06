@@ -1,7 +1,7 @@
 ## Powershell - AuthWin
 ### Description
 
-The script allows to automate the validation of credentials on domain level servers. It also allows to identify the following states: Communication over port 3389 (RDP), DMZ and server access.
+The script allows to obtain the Java version. Likewise, the following statuses are shown in the report: No communication with the server, No Java installed and Java version. In addition, the script will have as input the hostnames or ip's of the servers to which the query will be made, for this it will be necessary to use its administrator user at domain level.
 
 ### Preparation
 
@@ -42,7 +42,7 @@ You will then be prompted to enter your user and password at the domain level. O
 
 `report.csv`
 
-Hostname | Conn. Port | Conn. Credentials | Msg
+Hostname | Category | Val | Exception
 --- | --- | --- | --- 
 ... | ... | ... | ...
 
